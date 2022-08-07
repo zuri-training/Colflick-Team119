@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
+import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
       </Layout>
     </BrowserRouter>
